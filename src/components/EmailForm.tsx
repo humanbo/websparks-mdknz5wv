@@ -34,7 +34,7 @@ const EmailForm: React.FC<EmailFormProps> = ({ onSubmit, loading }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-md mx-auto space-y-6">
+    <form onSubmit={handleSubmit} className="w-full max-w-sm mx-auto space-y-4">
       <Input
         type="email"
         placeholder="Enter your email address"
@@ -52,12 +52,12 @@ const EmailForm: React.FC<EmailFormProps> = ({ onSubmit, loading }) => {
         style={{ animationDelay: '0.1s' }}
       >
         <span className="flex items-center justify-center">
-          <i className="bi bi-arrow-right mr-2"></i>
-          Join the Waitlist
+          <i className="bi bi-arrow-right mr-2 text-sm"></i>
+          Join Waitlist
         </span>
       </Button>
       
-      <p className="text-center text-sm text-silver-500 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+      <p className="text-center text-xs text-silver-500 animate-fade-in" style={{ animationDelay: '0.2s' }}>
         <i className="bi bi-shield-check mr-1"></i>
         We respect your privacy. No spam, ever.
       </p>

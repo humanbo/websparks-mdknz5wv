@@ -79,24 +79,24 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-charcoal-900 via-charcoal-800 to-black font-inter">
       {/* Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-silver-400/5 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-silver-300/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-silver-400/5 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-silver-300/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
       </div>
       
       {/* Main Content */}
       <div className="relative z-10">
-        <main className="container mx-auto px-6 py-20">
-          <div className="max-w-4xl mx-auto">
+        <main className="container mx-auto px-6 py-16">
+          <div className="max-w-3xl mx-auto">
             {/* Hero Section */}
             <Hero />
             
             {/* Email Form Section */}
-            <div className="mt-16 space-y-8">
+            <div className="mt-12 space-y-6">
               <div className="text-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
-                <h2 className="text-2xl md:text-3xl font-semibold text-silver-200 mb-4">
+                <h2 className="text-xl md:text-2xl font-semibold text-silver-200 mb-3">
                   Be Among the First
                 </h2>
-                <p className="text-silver-400 max-w-lg mx-auto">
+                <p className="text-silver-400 text-sm max-w-md mx-auto">
                   Join our exclusive waitlist and get early access to features that will transform how you work and create.
                 </p>
               </div>
@@ -107,13 +107,13 @@ function App() {
               
               {/* Social Proof */}
               <div className="text-center animate-fade-in" style={{ animationDelay: '1s' }}>
-                <div className="inline-flex items-center px-6 py-3 bg-silver-100/5 backdrop-blur-sm rounded-full border border-silver-600/20">
-                  <div className="flex -space-x-2 mr-4">
-                    <div className="w-8 h-8 bg-gradient-to-r from-silver-300 to-silver-400 rounded-full border-2 border-charcoal-800"></div>
-                    <div className="w-8 h-8 bg-gradient-to-r from-silver-400 to-silver-500 rounded-full border-2 border-charcoal-800"></div>
-                    <div className="w-8 h-8 bg-gradient-to-r from-silver-200 to-silver-300 rounded-full border-2 border-charcoal-800"></div>
+                <div className="inline-flex items-center px-4 py-2 bg-silver-100/5 backdrop-blur-sm rounded-full border border-silver-600/20">
+                  <div className="flex -space-x-1.5 mr-3">
+                    <div className="w-6 h-6 bg-gradient-to-r from-silver-300 to-silver-400 rounded-full border-2 border-charcoal-800"></div>
+                    <div className="w-6 h-6 bg-gradient-to-r from-silver-400 to-silver-500 rounded-full border-2 border-charcoal-800"></div>
+                    <div className="w-6 h-6 bg-gradient-to-r from-silver-200 to-silver-300 rounded-full border-2 border-charcoal-800"></div>
                   </div>
-                  <span className="text-sm text-silver-300">
+                  <span className="text-xs text-silver-300">
                     <span className="font-semibold text-silver-200">{subscriberCount.toLocaleString()}</span> visionaries already joined
                   </span>
                 </div>
@@ -121,29 +121,29 @@ function App() {
             </div>
             
             {/* Features Preview */}
-            <div className="mt-24 grid md:grid-cols-3 gap-8 animate-slide-up" style={{ animationDelay: '1.2s' }}>
-              <div className="text-center p-6 bg-silver-100/5 backdrop-blur-sm rounded-2xl border border-silver-600/20 hover:bg-silver-100/10 transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-r from-silver-400 to-silver-300 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <i className="bi bi-lightning-charge text-charcoal-900 text-xl"></i>
+            <div className="mt-16 grid md:grid-cols-3 gap-6 animate-slide-up" style={{ animationDelay: '1.2s' }}>
+              <div className="text-center p-4 bg-silver-100/5 backdrop-blur-sm rounded-xl border border-silver-600/20 hover:bg-silver-100/10 transition-all duration-300">
+                <div className="w-10 h-10 bg-gradient-to-r from-silver-400 to-silver-300 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <i className="bi bi-lightning-charge text-charcoal-900 text-lg"></i>
                 </div>
-                <h3 className="text-lg font-semibold text-silver-200 mb-2">Lightning Fast</h3>
-                <p className="text-silver-400 text-sm">Experience unprecedented speed and performance in everything you do.</p>
+                <h3 className="text-base font-semibold text-silver-200 mb-2">Lightning Fast</h3>
+                <p className="text-silver-400 text-xs">Experience unprecedented speed and performance in everything you do.</p>
               </div>
               
-              <div className="text-center p-6 bg-silver-100/5 backdrop-blur-sm rounded-2xl border border-silver-600/20 hover:bg-silver-100/10 transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-r from-silver-400 to-silver-300 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <i className="bi bi-shield-check text-charcoal-900 text-xl"></i>
+              <div className="text-center p-4 bg-silver-100/5 backdrop-blur-sm rounded-xl border border-silver-600/20 hover:bg-silver-100/10 transition-all duration-300">
+                <div className="w-10 h-10 bg-gradient-to-r from-silver-400 to-silver-300 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <i className="bi bi-shield-check text-charcoal-900 text-lg"></i>
                 </div>
-                <h3 className="text-lg font-semibold text-silver-200 mb-2">Secure by Design</h3>
-                <p className="text-silver-400 text-sm">Your data and privacy are protected with enterprise-grade security.</p>
+                <h3 className="text-base font-semibold text-silver-200 mb-2">Secure by Design</h3>
+                <p className="text-silver-400 text-xs">Your data and privacy are protected with enterprise-grade security.</p>
               </div>
               
-              <div className="text-center p-6 bg-silver-100/5 backdrop-blur-sm rounded-2xl border border-silver-600/20 hover:bg-silver-100/10 transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-r from-silver-400 to-silver-300 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <i className="bi bi-magic text-charcoal-900 text-xl"></i>
+              <div className="text-center p-4 bg-silver-100/5 backdrop-blur-sm rounded-xl border border-silver-600/20 hover:bg-silver-100/10 transition-all duration-300">
+                <div className="w-10 h-10 bg-gradient-to-r from-silver-400 to-silver-300 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <i className="bi bi-magic text-charcoal-900 text-lg"></i>
                 </div>
-                <h3 className="text-lg font-semibold text-silver-200 mb-2">AI-Powered</h3>
-                <p className="text-silver-400 text-sm">Intelligent features that adapt and evolve with your needs.</p>
+                <h3 className="text-base font-semibold text-silver-200 mb-2">AI-Powered</h3>
+                <p className="text-silver-400 text-xs">Intelligent features that adapt and evolve with your needs.</p>
               </div>
             </div>
           </div>

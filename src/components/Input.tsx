@@ -27,8 +27,8 @@ const Input: React.FC<InputProps> = ({
     <div className={`relative ${className}`}>
       <div className="relative">
         {icon && (
-          <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-            <i className={`${icon} text-silver-500`}></i>
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <i className={`${icon} text-silver-500 text-sm`}></i>
           </div>
         )}
         <input
@@ -40,9 +40,9 @@ const Input: React.FC<InputProps> = ({
           onBlur={() => setFocused(false)}
           disabled={disabled}
           className={`
-            w-full px-4 py-4 ${icon ? 'pl-12' : ''} 
+            w-full px-3 py-2.5 ${icon ? 'pl-10' : ''} 
             bg-white/10 backdrop-blur-sm border border-silver-600/30 
-            rounded-xl text-silver-100 placeholder-silver-500 
+            rounded-lg text-silver-100 placeholder-silver-500 text-sm
             focus:outline-none focus:ring-2 focus:ring-silver-400 focus:border-transparent
             transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed
             ${focused ? 'bg-white/20 border-silver-400/50' : ''}
@@ -51,7 +51,7 @@ const Input: React.FC<InputProps> = ({
         />
       </div>
       {error && (
-        <p className="mt-2 text-sm text-red-400 animate-fade-in">
+        <p className="mt-1.5 text-xs text-red-400 animate-fade-in">
           <i className="bi bi-exclamation-circle mr-1"></i>
           {error}
         </p>
